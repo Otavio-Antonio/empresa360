@@ -16,14 +16,13 @@
                     <td>{{d.nome}}</td>
                     <td>{{d.telefone}}</td>
                     <td>
-                        <router-link to="/home/vendas/leads" class="btn btn-sm btn-primary">
+                        <router-link :to="`/home/vendas/leads/${d.id}`" class="btn btn-sm btn-primary">
                             <i class="bi bi-pencil-square" style="cursor: pointer;"></i>
                         </router-link>
                     </td>
                 </tr>
             </tbody>
         </table>
-        <span>{{ dados }}</span>
     </div>
 </template>
 
