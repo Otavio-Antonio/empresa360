@@ -27,23 +27,13 @@
 </template>
 
 <script>
+import ApiMixin from '@/mixins/ApiMixin.js'
 /* eslint-disable */
 export default {
     name: 'Leads',
-    data() {
-        return {
-            dados: null
-        }
-    },
-    methods: {
-        getDadosApi() {
-            fetch('http://localhost:3000/leads')
-            .then(response => response.json())
-            .then(response =>{this.dados = response})
-        },
-    },
+    mixins: [ApiMixin],
     created(){
-        this.getDadosApi()
+        this.getDadosApi('http://localhost:3000/leads')
     }
 }
 </script>
