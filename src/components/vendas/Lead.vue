@@ -22,7 +22,8 @@
         </div>
 
         <div class="col-auto">
-            <button type="button" class="btn btn-primary">Atualizar</button>
+            <button type="button" class="btn btn-outline-secondary btn-space" @click="$router.push({name:'leads'})">Voltar</button>
+            <button type="button" class="btn btn-outline-primary">Atualizar</button>
         </div>
 
     </div>
@@ -39,3 +40,8 @@ export default {
     }
 }
 </script>
+<style scoped>
+.btn-space{
+    margin-right: 5px;
+}
+</style>
