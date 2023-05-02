@@ -49,6 +49,12 @@
 
             </div>
         </div>
+        <!--
+            Apresenta o rodape de um componente, as iformações do rodapé serão repassadas
+            pelo componente que deseja apresentar um rodape, por exemplo, as informações do
+            componente DashbordRodape serão apresentadas pois no router.js a rota dashboard
+            está configurada para apresentar 2 views, Dashboard e DashboardRodape;
+        -->
         <div class="rodape">
             <router-view name="rodape"></router-view>
         </div>
